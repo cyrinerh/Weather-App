@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Weather App</title>
+	<link rel="stylesheet" href="weather-icons-master/css/weather-icons.css">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body background="images/image.jpg">
+	<header class="firstHeader">
+		<h1>Go My C<i class="wi wi-hail"></i>de</h1>
+		<h1 class="weatherApp">Weather App</h1>
+	</header>
+	<div class="parent">
+		<div class="leftSideInformation">
+			<div><h1 class="firstLine" style="text-align: center;">You are here :</h1></div>
+
+			<div class="loader"></div>
+			<div class="position">
+				<div class="location">
+				</div>
+				<div class="temp celsius">
+					<span class="deg"></span> °<a href="#"><span class="unit"></span></a>
+				</div>
+				<div class="weather">
+				</div>
+				<div class="iconDesc">
+				</div>
+			</div>
+		</div>
+		<div class="middleSideInformation">
+			<table>
+				<h2>Right Now</h2>
+				<hr class="unique">
+				<tbody>
+					
+					<p class="title">Wind</p>
+					<p><span class="windSpeed"></span></p>
+					<hr>
+					<p class="title">Humidity</p>
+					<p><span class="humidity"></span></p>
+					<hr>
+					<p class="title">Temp min/max</p>
+					<p><span class="tempMinMax"></span></p>
+					<hr>
+					<p class="title">Pressure</p>
+					<p><span class="pressure"></span></p>
+					<hr>
+					<p class="title">Visibility</p>
+					<p><span class="visibility"></span></p>
+
+				</tbody>
+			</table>
+		</div>
+		<div id="map">
+			<img src="" class="image">
+		</div>
+	</div>
+	
+	<footer>
+		Inspired by Sirine & Baligh
+	</footer>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="main.js"></script>	
+</body>
+</html>
