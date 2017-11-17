@@ -23,15 +23,17 @@ header {
 /*Main section*/
 .parent {
 	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	flex-wrap: wrap;
+	margin-top: 30px;
 }
+
 /*Left side in the main section */
 .leftSideInformation {
 	background-color: transparent;
-	padding: 30px;
-	margin-right: 50px;
 	text-shadow: 0px 0px 17px #151414;
-	margin-top: 60px;
-	margin-left: 150px;
+	width: 30%;
 }
 .loader {
 	border: 16px solid #f3f3f3; /* Light grey */
@@ -40,7 +42,7 @@ header {
 	width: 20px;
 	height: 20px;
 	animation: spin 2s linear infinite;
-	margin-left: 213px;
+	margin-left: 165px;
 	margin-top: 40px;
 }
 .position {
@@ -79,15 +81,35 @@ header {
 	margin-top: -25px;
 	font-size: 1em;
 }
+@media screen and (max-width: 768px) {
+	.rightSideInformation {
+		width: 90%;
+	}
+	.middleSideInformation{
+		width: 45%;
+	}
+	.leftSideInformation {
+		width: 45%;
+	}
+}
 
-/*Map*/
-#map {
-	margin-left: 170px;
-	margin-top: 100px;
-	width: 350px;
-	height: 340px;
-} 
+@media screen and (max-width: 576px) {
+	.rightSideInformation {
+		width: 100% !important;
+	}
+	.middleSideInformation{
+		width: 100% !important;
+	}
+	.leftSideInformation {
+		width: 100% !important;
+	}
+}
 
+.rightSideInformation {
+	width: 30%;
+	display: flex;
+	justify-content: center;
+}
 
 @keyframes spin {
 	0% { transform: rotate(0deg); }
@@ -95,14 +117,10 @@ header {
 }
 
 .middleSideInformation{
-	margin-right: 50px;
-	margin-bottom: 45px;
 	text-align: center;
-	padding: 5px;
 	background: transparent;
 	color: white;
-	margin-top: 77px;
-	margin-left: 65px;
+	width: 30%;
 }
 .title{
 	font-size: 17px;
@@ -128,13 +146,13 @@ footer {
 	display: flex;
 	justify-content: center;
 	color: white;
+	font-weight: bold;
+	font-size: 24px;
 }
 
-
-
-
-
-
+.unitLink {
+	color: white;
+}
 
 .cloud {
 	position: absolute;

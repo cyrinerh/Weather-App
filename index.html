@@ -13,19 +13,19 @@
 	</header>
 	<div class="parent">
 		<div class="leftSideInformation">
-			<div><h1 class="firstLine" style="text-align: center;">You are here :</h1></div>
+			<div>
+				<h1 class="firstLine" style="text-align: center;">You are here :</h1>
+			</div>
 
 			<div class="loader"></div>
+
 			<div class="position">
-				<div class="location">
-				</div>
+				<div class="location"></div>
 				<div class="temp celsius">
-					<span class="deg"></span> °<a href="#"><span class="unit"></span></a>
+					<span class="deg"></span> °<a href="#" class="unitLink"><span class="unit"></span></a>
 				</div>
-				<div class="weather">
-				</div>
-				<div class="iconDesc">
-				</div>
+				<div class="weather"></div>
+				<div class="iconDesc"></div>
 			</div>
 		</div>
 		<div class="middleSideInformation">
@@ -43,22 +43,21 @@
 					<p class="title">Temp min/max</p>
 					<p><span class="tempMinMax"></span></p>
 					<hr>
-					<p class="title">Pressure</p>
-					<p><span class="pressure"></span></p>
-					<hr>
 					<p class="title">Visibility</p>
 					<p><span class="visibility"></span></p>
 
 				</tbody>
 			</table>
 		</div>
-		<div id="map">
-			<img src="" class="image">
+		<div class="rightSideInformation">
+			<div id="map">
+				<img src="" class="image">
+			</div>
 		</div>
 	</div>
 	
 	<footer>
-		Inspired by Sirine & Baligh
+		Inspired by Sirine Raihane
 	</footer>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="main.js"></script>	
